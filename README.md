@@ -21,7 +21,27 @@ To get started, simply clone this repository to your local environment. The code
 
 ## Usage
 
-Please refer to our comprehensive documentation for usage instructions, tutorials, and more. The [Usage Guide](docs/usage-guide.md) will walk you through the installation and implementation of ConnectivityXchange.
+This RTI driver is for the ZeeVEe Zyper platform. It needs to be compiled using babel with the following settings
+
+```JSON
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "ie": 6
+          }
+        }
+      ]
+    ],
+    "ignore": [
+      "libs/*.js"
+    ]
+  }
+```
+
+You will also need to create an appropriate UUID with PackageDriver and add that to the DriverManifest.xml file.
 
 ## Modifying the Code
 
