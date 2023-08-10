@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<functions>
+
+	<category name="Switching Commands">
+		<function name="Switching" export="join" repeatrate="0">
+			<parameter name="Encoder" type="string" />
+			<parameter name="Decoder" type="string" />
+			<parameter name="Mode" type="mcstring">
+				<choice name="s" value="analog-audio"/>
+				<choice name="Fast Switched" value="fast-switched"/>
+				<choice name="Genlocked" value="genlocked"/>
+				<choice name="Genlocked Scaled" value="genlocked-scaled"/>
+				<choice name="HDMI Downmix Audio" value="hdmi-downmix-audio"/>
+				<choice name="Multiview" value="multiview"/>
+				<choice name="USB" value="usb"/>
+			</parameter>
+		</function>
+		<function name="Multiview" export="multiview" repeatrate="0">
+			<parameter name="Multiview Name" type="string" />
+			<parameter name="Decoder" type="string" />
+		</function>
+		<function name="Video Wall" export="wall" repeatrate="0">
+			<parameter name="Video Wall Name" type="string" />
+			<parameter name="Encoder" type="string" />
+		</function>
+		<function name="Select Encoder" export="selectEncoder" repeatrate="0">
+			<parameter name="index" type="integer" min="0" max="99999" default="0" description="Select the encoder to join"/>
+		</function>
+		<function name="Select Decoder" export="selectDecoder" repeatrate="0">
+			<parameter name="index" type="integer" min="0" max="99999" default="0" description="Select the decoder to join"/>
+		</function>
+		<function name="Join Selection" export="select" repeatrate="0">
+			<parameter name="Mode" type="mcstring">
+				<choice name="Analog Audio" value="analog-audio"/>
+				<choice name="Fast Switched" value="fast-switched"/>
+				<choice name="Genlocked" value="genlocked"/>
+				<choice name="Genlocked Scaled" value="genlocked-scaled"/>
+				<choice name="HDMI Downmix Audio" value="hdmi-downmix-audio"/>
+				<choice name="Multiview" value="multiview"/>
+				<choice name="USB" value="usb"/>
+			</parameter>
+		</function>
+	</category>
+
+	<category name="Video Wall Modification">
+		<function name="Add New Video Wall" export="createVideoWall" repeatrate="0">
+			<parameter name="Video Wall Name" type="string"/>
+		</function>
+		<function name="Delete Video Wall" export="deleteVideoWall" repeatrate="0">
+			<parameter name="Video Wall Name" type="string"/>
+		</function>
+		<function name="Modify Video Wall" export="createWall" repeatrate="0">
+			<parameter name="Decoder" type="string"/>
+			<parameter name="Video Wall Name" type="string"/>
+			<parameter name="Row" type="integer"/>
+			<parameter name="Column" type="integer"/>
+		</function>
+	</category>
+
+<category name="Multiview Audio Commands">
+		<function name="Multiview Set Audio" export="multiviewAudio" repeatrate="0">
+			<parameter name="Multiview Name" type="string"/>
+			<parameter name="Source Number" type="integer"/>
+		</function>
+	</category>	
+
+	<category name="Control Commands" >
+		<function name="Send RS232" export="send232" repeatrate="0">
+			<parameter name="Device Name" type="string" />
+			<parameter name="data" type="string" />
+		</function>
+		<function name="Flash LED's" export="flash" repeatrate="0">
+			<parameter name="Device Name" type="string"/>
+		</function>
+		<function name="Get Status" export="getStatus" repeatrate="0" />
+	</category>
+
+	<category name="Driver State">
+		<function name="Get State" export="getState" repeatrate="0">
+			<parameter name="fetch" type="boolean"/>
+		</function>			
+	</category>
+</functions>

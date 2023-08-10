@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<driverManifest>
+	<driver
+		id="{PLEASE_ENTER_A_VALID_UUID}"
+
+    name="Zyper"
+    author="Chowmain Software"
+    copyright="Copyright 2018 Chowmain Software"
+    deviceManufacturer="ZeeVee"
+    deviceModel="Zyper"
+		driverVersion="1.1"
+		
+		minimumRuntimeVersion="15"		
+		minimumSoftwareVersion="9.9"
+		
+		processorType="XP-8"
+
+		configSettingsStream="system/ConfigSettings.xml"
+		systemEventsStream="system/SystemEvents.xml"
+		systemVariablesStream="system/SystemVariables.xml"
+		systemFunctionsStream="system/SystemFunctions.xml"
+		helpTextStream="documentation/ZeeVee Zyper RTI Driver.rtf">
+
+    <processorScript stream="libs/jsSHA.js" />
+    <processorScript stream="libs/es5-shim.min.js" />
+    <processorScript stream="libs/es5-sham.min.js" />
+    <processorScript stream="libs/Hexdump.js" />
+    <processorScript stream="libs/Queue.js" />
+    <processorScript stream="libs/polyfills.js" />
+    <processorScript stream="dist/json2.js" />
+    <processorScript stream="dist/request.js" />
+    <processorScript stream="dist/log.js" />   
+    <processorScript stream="dist/zyper.js" />
+    <processorScript stream="dist/index.js" />   
+    <package>
+      <output filename="Zyper" public="true" />
+    </package>
+	</driver>
+</driverManifest>

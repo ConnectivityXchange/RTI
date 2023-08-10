@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+	<category name="Zyper Settings" description="">
+		<setting name="IP Address" type="string" variable="addr" default="127.0.0.1" description="Enter the IP address to send requests to." />
+		<setting name="Username" type="string" variable="username" default="api" description="Enter the API username (default: api)" />
+    <setting name="Password" type="string" variable="password" default="" description="Enter the API password (default: [blank]"/>
+    <setting name="Poll Interval (s)" type="integer" variable="poll_interval" default="30" description="Polling time for fetching encoder/decoder status (in seconds)"/>
+	</category>
+
+	<category name="Debug Settings" description="Driver debug options" hidden="true">
+		<setting type="boolean" name="Enable Trace" variable="EnableTrace" description="Enable verbose debug output" />
+	</category>
+
+</configuration>

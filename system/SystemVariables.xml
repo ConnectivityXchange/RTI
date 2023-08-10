@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<variables>
+  <category name="Encoders">
+    <variable name="Encoder List" sysvar="encoderList" type="list"/>
+  </category>
+  <category name="Decoders">
+    <variable name="Decoder List" sysvar="decoderList" type="list"/>
+  </category>
+</variables>

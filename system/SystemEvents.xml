@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<events>
+	<category name="Connection State Events" >
+		<event name="Disconnected" tag="CONNECTIONSTATE00"/>
+		<event name="Connected" tag="CONNECTIONSTATE01"/>
+	</category>
+</events>
