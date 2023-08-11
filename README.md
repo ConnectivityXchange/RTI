@@ -17,11 +17,11 @@ ConnectivityXchange is designed to empower AV integrators to seamlessly incorpor
 
 ## Getting Started
 
-To get started, simply clone this repository to your local environment. The codebase is licensed under the GPL-3.0 license, which means you are free to use, modify, and distribute the software as long as your use remains non-profit. For more details, please refer to the [LICENSE](LICENSE) file.
+To get started, simply clone this repository to your local environment. The codebase is licensed under the GPL-3.0 license, which means you are free to use, modify, and distribute the software. For more details, please refer to the [LICENSE](LICENSE) file.
 
 ## Usage
 
-This RTI driver is for the ZeeVEe Zyper platform. It needs to be compiled using babel with the following settings
+This RTI driver is for the ZeeVee Zyper platform. It needs to be compiled using babel with the following settings
 
 ```JSON
   "babel": {
